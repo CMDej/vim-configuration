@@ -6,7 +6,10 @@ vnoremap jk <esc>
 set number
 set hlsearch
 set nowrap
+set t_Co=256
+set tabstop=4
 set shiftwidth=4
+set expandtab
 
 syntax enable
 set guifont=Consolas:h9:cANSI
