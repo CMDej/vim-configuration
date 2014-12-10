@@ -17,7 +17,7 @@ set guioptions-=r
 set guioptions-=L
 
 syntax enable
-set guifont=Consolas:h9:cANSI
+set guifont=Inconsolata-dz\ for\ Powerline:h10
 colorscheme hybrid
 
 execute pathogen#infect()
