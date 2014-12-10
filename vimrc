@@ -1,5 +1,3 @@
-echo ">^.^<"
-
 set encoding=utf-8
 
 inoremap jk <esc>
