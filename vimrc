@@ -11,6 +11,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
 syntax enable
 set guifont=Consolas:h9:cANSI
 colorscheme hybrid
