@@ -16,6 +16,8 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=L
 
+let g:netrw_liststyle=3
+
 syntax enable
 set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
 colorscheme hybrid
@@ -23,11 +25,11 @@ colorscheme hybrid
 execute pathogen#infect()
 filetype plugin indent on
 
-autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-let NERDTreeMinimalUI=1
+" autocmd vimenter * NERDTree
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" let NERDTreeMinimalUI=1
 
 " Highlights characters over position 79 in line
 highlight OverLength ctermbg=237 guibg=#3a3a3a
@@ -45,6 +47,7 @@ let maplocalleader = ","
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+noremap <leader>t :Explore<cr>
 noremap <leader>- ddp
 noremap <leader>_ ddkkp
 inoremap <c-u> <esc>viwU<esc>eli
